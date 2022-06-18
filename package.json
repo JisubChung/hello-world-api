@@ -1,0 +1,19 @@
+{
+  "name": "hello_world_api",
+  "version": "1.0.0",
+  "description": "this is a test api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JisubChung/hello-world-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JisubChung/hello-world-api/issues"
+  },
+  "homepage": "https://github.com/JisubChung/hello-world-api#readme"
+}
