@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf build",
     "build": "yarn run clean && tsc --sourceMap --checkJs --allowJs --removeComments --strict --pretty --outDir build",
-    "start": "node build",
+    "start": "node build/start.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -w src src/start.ts"
   },
