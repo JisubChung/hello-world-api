@@ -2,11 +2,13 @@
   "name": "hello_world_api",
   "version": "1.0.0",
   "description": "this is a test api",
-  "main": "src/index.ts",
+  "main": "src/start.ts",
   "scripts": {
-    "build": "tsc --sourceMap --checkJs --allowJs --removeComments --strict --pretty --outDir build",
+    "clean": "rimraf build",
+    "build": "yarn run clean && tsc --sourceMap --checkJs --allowJs --removeComments --strict --pretty --outDir build",
+    "start": "node build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": ""
+    "dev": "nodemon -w src src/start.ts"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "@typescript-eslint/parser": "5.28.0",
     "eslint": "8.18.0",
     "nodemon": "2.0.16",
+    "rimraf": "3.0.2",
     "ts-node": "10.8.1",
     "typescript": "4.7.4"
   }

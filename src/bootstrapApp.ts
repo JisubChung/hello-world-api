@@ -69,4 +69,3 @@ export default function (app: _expressApp, initServices: _serviceFn[]) {
         }
     };
 }
-
